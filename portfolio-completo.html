@@ -21,6 +21,59 @@
 					<h1><strong>Portafolio Completo</strong></h1>
 					<p style="color: white; font-size: 1.1em;"><br/>Todos mis proyectos<br/>y contribuciones.</p>
 				</div>
+				<style>
+					/* ELIMINAR EL PUNTO NEGRO DE LOS BOTONES */
+					ul.actions {
+						list-style: none !important;
+						padding-left: 0 !important;
+					}
+
+					/* ALINEAR PROYECTOS Y BOTONES A LA MISMA ALTURA */
+					.work-item {
+						display: flex;
+						flex-direction: column;
+						height: 100%; /* Hace que todas las cajas midan lo mismo */
+					}
+					
+					.work-item p {
+						flex-grow: 1; /* Hace que el texto rellene el espacio sobrante */
+						margin-bottom: 1.5em; 
+					}
+
+					.work-item .actions {
+						margin-top: auto; /* Empuja el botón siempre hacia el fondo de la caja */
+						margin-bottom: 0;
+					}
+							main-nav {
+						width: 100%;
+						margin-bottom: 2.5em; /* Separa el menú del contenido inferior */
+						display: flex;
+						justify-content: center; /* Centra horizontalmente todo el menú */
+					}
+
+					#main-nav ul {
+						display: flex;
+						flex-wrap: wrap; /* Permite que se acomode en celulares si no hay espacio */
+						justify-content: center;
+						align-items: center;
+						list-style: none;
+						padding: 0;
+						margin: 0;
+						gap: 1.5em; /* Crea una separación uniforme y exacta entre cada botón */
+					}
+
+					#main-nav ul li {
+						margin: 0 !important; /* Limpia márgenes antiguos que puedan mover el eje */
+						padding: 0 !important;
+						width: auto !important; /* Elimina anchos fijos en porcentaje para que hereden el flex */
+					}
+
+					#main-nav ul li a {
+						display: inline-block;
+						padding: 0.5em 1.2em;
+						border-bottom: none;
+					}
+				</style>
 			</header>
 
 		<!-- Main -->
@@ -31,9 +84,9 @@
 					<ul>
 						<li><a href="index.html">Inicio</a></li>
 						<li><a href="portfolio-completo.html" class="active">Portafolio Completo</a></li>
-						<li><a href="#">Mi Trayectoria</a></li>
+	
 						<li><a href="concursos.html">Concursos</a></li>
-						<li><a href="#">Reconocimientos</a></li>
+						<li><a href="certificados.html">Certificaciones</a></li>
 					</ul>
 				</nav>
 
@@ -41,19 +94,23 @@
 					<section id="projects">
 						<h2>Mis Proyectos</h2>
 						<div class="row">
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/09.gif" class="image fit thumb"><img src="images/thumbs/09.gif" alt="" /></a>
 								<h3>Gestion de Inventario con Docker y Tailscale</h3>
-								<p>El presente proyecto tiene como objetivo el diseño y despliegue de un Sistema de Inventario Distribuido, orientado a resolver las necesidades de gestión de productos de una pequeña empresa.</p>
-								<a href="https://github.com/jvit04/GestionInventario_Contenedores"><span class="label">Ver Repositorio en GitHub</span></a>
-
+								<p>Plataforma web interna para el diseño y despliegue de un Sistema de Inventario Distribuido. Promueve la gestión automatizada de productos, el control de stock y el acceso a reportes comerciales.</p>
+								<ul class="actions">
+								<li><a href="https://github.com/jvit04/GestionInventario_Contenedores" target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
+
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="images/fulls/08.gif" class="image fit thumb"><img src="images/thumbs/08.gif" alt="" /></a>
 								<h3>Team Up UEES</h3>
-								<p>Plataforma web interna de la UEES para registrar, difundir y gestionar actividades extracurriculares, promoviendo la creación de equipos competitivos, la postulación a clubes y el acceso a eventos académicos.</p>
-								<a href="https://github.com/jvit04/TeamUp-UEES"><span class="label">Ver Repositorio en GitHub</span></a>
-
+								<p>Plataforma web interna de la UEES para registrar, difundir y gestionar actividades extracurriculares. Promueve el desarrollo de equipos competitivos, la postulación directa a clubes y el acceso a eventos académicos.</p>
+								<ul class="actions">
+								<li><a href="https://github.com/jvit04/TeamUp-UEES"target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
 
 							<!-- Project 1 -->
@@ -63,7 +120,9 @@
 								<p>Aplicación en italiano tipo trivia diseñada para el International Day en la UEES.
 									El software sigue el formato del Totocalcio, un historico concurso de apuestas deportivas de fútbol en Italia.
 								</p>
-								<a href="https://github.com/jvit04/Proyecto_InternationalDay_Totocalcio"><span class="label">Ver Repositorio en GitHub</span></a>
+								<ul class="actions">
+								<li><a href="https://github.com/jvit04/Proyecto_InternationalDay_Totocalcio"target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
 
 							<!-- Project 2 -->
@@ -73,7 +132,9 @@
 								<p>Proyecto de Base de datos II donde se desarolló un Data Warehouse y una aplicación que permite observar
 									distintas métricas con los datos simulados de la empresa otorgada. 
 								</p>
-								<a href="https://github.com/jvit04/Proyecto_bd2_Fractalia"><span class="label">Ver Repositorio en GitHub</span></a>
+								<ul class="actions">
+								<li><a href="https://github.com/jvit04/Proyecto_bd2_Fractalia"target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
 
 							<!-- Project 3 -->
@@ -81,7 +142,9 @@
 								<a href="images/fulls/03.gif" class="image fit thumb"><img src="images/thumbs/03.png" alt="" /></a>
 								<h3>Agenda de Contactos</h3>
 								<p>Proyecto de Estructura de Datos donde se desarolló una agenda de contactos para aplicar las estructuras aprendidas en clase, tales como Arbol Atrie y Heap.</p>
-								<a href="https://github.com/jvit04/Proeycto_ed_AgendaContactos"><span class="label">Ver Repositorio en GitHub</span></a>
+								<ul class="actions">
+								<li><a href="https://github.com/jvit04/Proeycto_ed_AgendaContactos"target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
 
 							<!-- Project 4 -->
@@ -89,7 +152,9 @@
 								<a href="images/fulls/04.gif" class="image fit thumb"><img src="images/thumbs/04.png" alt="" /></a>
 								<h3>Estacionamiento Inteligente</h3>
 								<p>Proyecto de Sistemas Operativos donde aprendí a trabajar con programación concurrente, mediante la organización de multiples vehículos en un estacionamiento.</p>
-								<a href="https://github.com/jvit04/Proyecto_Sis_EstacionamientoInteligente"><span class="label">Ver Repositorio en GitHub</span></a>
+								<ul class="actions">
+								<a href="https://github.com/jvit04/Proyecto_Sis_EstacionamientoInteligente"target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
 
 							<!-- Project 5 -->
@@ -97,7 +162,9 @@
 								<a href="images/fulls/05.gif" class="image fit thumb"><img src="images/thumbs/05.gif" alt="" /></a>
 								<h3>Arquidiócesis de una ciudad</h3>
 								<p>Proyecto de Base de Datos I donde aprendí a trabajar con las bases de datos a través del tema propuesto, explorando las bases relacionales, las tablas, relaciones, SQL, generación de reportes y la conexión entre aplicación y base de datos.</p>
-								<a href="https://github.com/jvit04/Proyecto_bd_Arquidiocesis"><span class="label">Ver Repositorio en GitHub</span></a>
+								<ul class="actions">
+								<a href="https://github.com/jvit04/Proyecto_bd_Arquidiocesis"target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
 
 							<!-- Project 6 -->
@@ -105,14 +172,18 @@
 								<a href="images/fulls/06.gif" class="image fit thumb"><img src="images/thumbs/06.gif" alt="" /></a>
 								<h3>Billetera Virtual</h3>
 								<p>Proyecto de Programación Orientada a Objetos donde aplique todo lo aprendido de la materia para desarrollar una aplicación del tema, explorando buenas prácticas de programador como SOLID y empleando el diagrama de clases UML.</p>
-								<a href="https://github.com/jvit04/Proyecto_POO_BilleteraVirtual"><span class="label">Ver Repositorio en GitHub</span></a>
+								<ul class="actions">
+								<a href="https://github.com/jvit04/Proyecto_POO_BilleteraVirtual"target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
 
 							<article class="col-6 col-12-xsmall work-item">
 								<a href="videos/07.mp4" class="image fit thumb"><img src="images/thumbs/07.png" alt="" /></a>
 								<h3>Sistema de Calificaciones</h3>
 								<p> Proyecto de Estructura de datos donde se creo un Sistema de Calificaciones capaz de manejar distintos calculos.</p>
-								<a href="https://github.com/jvit04/Proyecto_ed_SistemaCalificaciones"><span class="label">Ver Repositorio en GitHub</span></a>
+								<ul class="actions">
+								<a href="https://github.com/jvit04/Proyecto_ed_SistemaCalificaciones"target="_blank" class="button small">Ver Repositorio en GitHub</a></li>
+								</ul>
 							</article>
 
 							<!-- Add more projects here following the same format -->
