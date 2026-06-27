@@ -71,6 +71,37 @@
 					<h1><strong>Concursos y Hackathons</strong></h1>
 					<p style="color: white; font-size: 1.1em;"><br/>Retos superados y<br/>soluciones innovadoras.</p>
 				</div>
+				<style>
+					#main-nav {
+				width: 100%;
+				margin-bottom: 2.5em; /* Separa el menú del contenido inferior */
+				display: flex;
+				justify-content: center; /* Centra horizontalmente todo el menú */
+			}
+
+			#main-nav ul {
+				display: flex;
+				flex-wrap: wrap; /* Permite que se acomode en celulares si no hay espacio */
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				gap: 1.5em; /* Crea una separación uniforme y exacta entre cada botón */
+			}
+
+			#main-nav ul li {
+				margin: 0 !important; /* Limpia márgenes antiguos que puedan mover el eje */
+				padding: 0 !important;
+				width: auto !important; /* Elimina anchos fijos en porcentaje para que hereden el flex */
+			}
+
+			#main-nav ul li a {
+				display: inline-block;
+				padding: 0.5em 1.2em;
+				border-bottom: none;
+			}
+				</style>
 			</header>
 
 		<div id="main">
@@ -79,9 +110,9 @@
 					<ul>
 						<li><a href="index.html">Inicio</a></li>
 						<li><a href="portfolio-completo.html">Portafolio Completo</a></li>
-						<li><a href="#">Mi Trayectoria</a></li>
+	
 						<li><a href="concursos.html" class="active">Concursos</a></li>
-						<li><a href="#">Reconocimientos</a></li>
+						<li><a href="certificados.html">Certificaciones</a></li>
 					</ul>
 				</nav>
 
@@ -105,9 +136,10 @@
 									<span class="tag-tech">Git</span>
 								</div>
 
-								<ul class="actions">
-									<li><a href="https://github.com/jvit04/Proyecto_SpaceHack_Mangroves" target="_blank" class="button small">Ver Repositorio</a></li>
-								</ul>
+							<ul class="actions">
+								<li><a href="https://github.com/jvit04/Proyecto_SpaceHack_Mangroves" target="_blank" class="button small">Ver Repositorio</a></li>
+								<li><a href="https://jvit04.github.io/Proyecto_SpaceHack_Mangroves/" target="_blank" class="button small">Ver Página Web</a></li>
+							</ul>
 							</div>
 						</details>
 						</section>
